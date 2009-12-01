@@ -1,3 +1,12 @@
+1.0.14
+------
+     * [r6645] [1.0] Releasing Doctrine 1.0.13
+     * [r6666] [1.0, 1.1, 1.2][DC-183] Fixes issue with non existant constant in sqlite datadict
+     * [r6672] [1.0][DC-77][DC-181] Hopefully fixes both tickets
+     * [r6733] [1.0, 1.1, 1.2] Fixing small regression in importer from database for the generated class names
+     * [r6800] [1.0, 1.1, 1.2][DC-283] Fixes issue with wrong class property referenced
+     * [r6832] [1.0, 1.1][DC-182] Fixing getRootAlias()
+
 1.0.13
 ------
      * [r6408] [1.0, 1.1] Releasing Doctrine 1.0.12 and 1.1.4
