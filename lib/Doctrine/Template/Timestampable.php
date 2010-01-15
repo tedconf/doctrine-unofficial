@@ -57,7 +57,7 @@ class Doctrine_Template_Timestampable extends Doctrine_Template
     /**
      * __construct
      *
-     * @param string $array 
+     * @param string $array
      * @return void
      */
     public function __construct(array $options = array())
@@ -81,5 +81,10 @@ class Doctrine_Template_Timestampable extends Doctrine_Template
         }
 
         $this->addListener(new Doctrine_Template_Listener_Timestampable($this->_options));
+    }
+
+    public function getOptions()
+    {
+        return $this->_options;
     }
 }
