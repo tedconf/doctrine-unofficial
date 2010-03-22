@@ -1931,10 +1931,10 @@ class Doctrine_Query extends Doctrine_Query_Abstract implements Countable, Seria
             $params = array($params);
         }
 
+        $q = $this->getCountQuery();
+
         $params = array_merge($this->_params['join'], $this->_params['where'], $this->_params['having'], $params);
         $params = $this->_conn->convertBooleans($params);
-
-        $q = $this->getCountQuery($params);
 
         $results = $this->getConnection()->fetchAll($q, $params);
 
